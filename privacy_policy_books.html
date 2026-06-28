@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — English Novel &amp; Books Offline</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --paper:      #F8F7F3;
+    --ink:        #1A1A18;
+    --ink-2:      #5C5C56;
+    --green:      #2D5016;
+    --green-pale: #EDF2E8;
+    --rule:       #DDD9CF;
+    --rule-dark:  #B8B3A8;
+  }
+
+  html {
+    background: var(--paper);
+    color: var(--ink);
+    font: 17px/1.7 system-ui, -apple-system, 'Segoe UI', sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    border-top: 4px solid var(--green);
+    min-height: 100vh;
+    padding: 0 20px 80px;
+  }
+
+  /* ── Container ─────────────────────────────────── */
+  .wrap {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  /* ── Header ────────────────────────────────────── */
+  header {
+    padding: 48px 0 40px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .app-label {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 12px;
+  }
+
+  header h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(26px, 5vw, 38px);
+    font-weight: normal;
+    line-height: 1.2;
+    color: var(--ink);
+    text-wrap: balance;
+    margin-bottom: 16px;
+  }
+
+  .meta {
+    font-size: 14px;
+    color: var(--ink-2);
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .meta span::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--green);
+    vertical-align: middle;
+    margin-right: 7px;
+    margin-bottom: 2px;
+  }
+
+  /* ── Intro ─────────────────────────────────────── */
+  .intro {
+    padding: 32px 0 0;
+    font-size: 15.5px;
+    color: var(--ink-2);
+    line-height: 1.75;
+  }
+
+  /* ── Sections ──────────────────────────────────── */
+  section {
+    margin-top: 44px;
+    padding-left: 20px;
+    border-left: 2px solid var(--rule);
+    transition: border-color .2s;
+  }
+
+  section:focus-within,
+  section:hover {
+    border-left-color: var(--green);
+  }
+
+  section h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: var(--ink);
+    margin-bottom: 12px;
+    text-wrap: balance;
+  }
+
+  section p {
+    font-size: 15.5px;
+    color: var(--ink-2);
+    line-height: 1.75;
+    margin-bottom: 12px;
+  }
+
+  section p:last-child { margin-bottom: 0; }
+
+  /* ── Data table ────────────────────────────────── */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 4px;
+    font-size: 14px;
+  }
+
+  .data-table th {
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--green);
+    padding: 0 12px 8px 0;
+    border-bottom: 1px solid var(--rule-dark);
+  }
+
+  .data-table td {
+    padding: 10px 12px 10px 0;
+    vertical-align: top;
+    color: var(--ink-2);
+    border-bottom: 1px solid var(--rule);
+    line-height: 1.55;
+  }
+
+  .data-table td:first-child {
+    font-weight: 500;
+    color: var(--ink);
+    white-space: nowrap;
+    padding-right: 24px;
+  }
+
+  .data-table tr:last-child td { border-bottom: none; }
+
+  /* ── Highlight box ─────────────────────────────── */
+  .callout {
+    background: var(--green-pale);
+    border-radius: 4px;
+    padding: 14px 18px;
+    font-size: 14.5px;
+    color: var(--ink);
+    line-height: 1.6;
+    margin: 16px 0 4px;
+  }
+
+  .callout strong {
+    color: var(--green);
+  }
+
+  /* ── List ──────────────────────────────────────── */
+  ul.clean {
+    list-style: none;
+    margin: 12px 0 4px;
+  }
+
+  ul.clean li {
+    font-size: 15px;
+    color: var(--ink-2);
+    line-height: 1.65;
+    padding: 4px 0 4px 18px;
+    position: relative;
+  }
+
+  ul.clean li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--rule-dark);
+  }
+
+  /* ── Contact ───────────────────────────────────── */
+  .contact-card {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 4px;
+    background: var(--green-pale);
+    border: 1px solid var(--rule-dark);
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin-top: 14px;
+    font-size: 14.5px;
+  }
+
+  .contact-card .label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--green);
+  }
+
+  .contact-card a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule-dark);
+  }
+
+  .contact-card a:hover,
+  .contact-card a:focus {
+    color: var(--green);
+    border-bottom-color: var(--green);
+  }
+
+  .contact-card a:focus-visible {
+    outline: 2px solid var(--green);
+    outline-offset: 2px;
+    border-radius: 1px;
+  }
+
+  /* ── Footer ────────────────────────────────────── */
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    font-size: 13px;
+    color: var(--ink-2);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  /* ── Responsive ────────────────────────────────── */
+  @media (max-width: 480px) {
+    section { padding-left: 14px; }
+    .meta { flex-direction: column; gap: 6px; }
+    .data-table td:first-child { white-space: normal; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    section { transition: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="app-label">Zigyasalabs</span>
+    <h1>Privacy Policy<br>English Novel &amp; Books Offline</h1>
+    <div class="meta">
+      <span>Effective: June 28, 2026</span>
+      <span>Last updated: June 28, 2026</span>
+    </div>
+  </header>
+
+  <p class="intro">
+    This Privacy Policy explains what information the <strong>English Novel &amp; Books Offline</strong>
+    Android app ("the App") collects, how it is used, and the choices you have. We are committed to
+    keeping your data minimal and your reading experience private.
+  </p>
+
+  <!-- 1 -->
+  <section>
+    <h2>Information We Collect</h2>
+    <p>
+      The App is designed to work offline. Most of your data never leaves your device.
+      A small amount of anonymous information is collected automatically to help us keep the App
+      stable and improve it over time.
+    </p>
+
+    <table class="data-table" aria-label="Data collected by the app">
+      <thead>
+        <tr>
+          <th>What</th>
+          <th>Why &amp; how</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>App usage &amp; screen events</td>
+          <td>Firebase Analytics collects anonymous usage events (e.g. which category you open, page reads). No personally identifiable information is attached.</td>
+        </tr>
+        <tr>
+          <td>Crash &amp; error reports</td>
+          <td>Firebase Crashlytics captures crash logs, device model, OS version, and app version when the App crashes. This data is used solely for debugging.</td>
+        </tr>
+        <tr>
+          <td>Advertising identifiers</td>
+          <td>Google AdMob may collect your device's advertising ID to serve and measure ads. You can reset or opt out of ad personalization in your device settings.</td>
+        </tr>
+        <tr>
+          <td>Favourite books list</td>
+          <td>Stored locally on your device using Android's SharedPreferences. This data never leaves your device and is deleted when you uninstall the App.</td>
+        </tr>
+        <tr>
+          <td>Reading preferences</td>
+          <td>Light/dark theme preference is stored locally on your device only.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout">
+      <strong>No account required.</strong> The App does not ask for your name, email address,
+      phone number, or any other personal information. No user registration exists.
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section>
+    <h2>How We Use the Information</h2>
+    <ul class="clean">
+      <li>To understand which features and books are most used, so we can improve the App.</li>
+      <li>To diagnose crashes and fix bugs quickly.</li>
+      <li>To display ads that help us keep the App free for readers.</li>
+      <li>We do not sell, trade, or rent any information to third parties.</li>
+      <li>We do not use any information for user profiling or targeted marketing of our own.</li>
+    </ul>
+  </section>
+
+  <!-- 3 -->
+  <section>
+    <h2>Third-Party Services</h2>
+    <p>
+      The App integrates the following third-party SDKs. Each has its own privacy policy
+      governing how it handles data.
+    </p>
+    <ul class="clean">
+      <li>
+        <strong>Firebase Analytics</strong> (Google) —
+        anonymous event tracking.
+        <a href="https://firebase.google.com/policies/analytics" target="_blank" rel="noopener">Privacy policy</a>
+      </li>
+      <li>
+        <strong>Firebase Crashlytics</strong> (Google) —
+        crash reporting.
+        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy policy</a>
+      </li>
+      <li>
+        <strong>Google AdMob</strong> —
+        in-app advertising.
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy policy</a>
+      </li>
+      <li>
+        <strong>Firebase Remote Config</strong> (Google) —
+        used to manage app settings remotely; no personal data is sent.
+        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy policy</a>
+      </li>
+    </ul>
+    <p>
+      These services operate under their own terms. We encourage you to review their policies
+      if you have questions about how they handle data.
+    </p>
+  </section>
+
+  <!-- 4 -->
+  <section>
+    <h2>Internet Permission</h2>
+    <p>
+      The App requests internet access solely for: loading ads (when ads are enabled),
+      sending crash reports to Crashlytics, and fetching remote configuration values.
+      Book content is bundled with the App and is fully available offline — no content
+      is downloaded from the internet.
+    </p>
+  </section>
+
+  <!-- 5 -->
+  <section>
+    <h2>Data Retention &amp; Security</h2>
+    <p>
+      Data stored on your device (favourites, preferences) is retained until you uninstall the App.
+      Anonymous analytics and crash data is retained by Google in accordance with their data
+      retention policies.
+    </p>
+    <p>
+      We do not operate our own servers and therefore do not store any personal information on
+      external infrastructure controlled by Zigyasalabs.
+    </p>
+  </section>
+
+  <!-- 6 -->
+  <section>
+    <h2>Children's Privacy</h2>
+    <p>
+      The App is suitable for general audiences. We do not knowingly collect personal information
+      from children under 13. Ads served by AdMob are configured to comply with the Children's
+      Online Privacy Protection Act (COPPA) where applicable.
+    </p>
+    <p>
+      If you believe a child has provided personal information through the App, please contact us
+      and we will take steps to delete it promptly.
+    </p>
+  </section>
+
+  <!-- 7 -->
+  <section>
+    <h2>Your Choices</h2>
+    <ul class="clean">
+      <li>
+        <strong>Ad personalisation:</strong> Go to <em>Settings → Google → Ads</em> on your Android
+        device to opt out of personalised ads or reset your advertising ID.
+      </li>
+      <li>
+        <strong>Analytics opt-out:</strong> Firebase Analytics respects the Android advertising
+        opt-out setting. Disabling ad personalisation also limits Analytics data collection.
+      </li>
+      <li>
+        <strong>Favourites &amp; preferences:</strong> Clear app data via <em>Settings → Apps →
+        English Novel &amp; Books Offline → Clear Data</em> to remove all locally stored data.
+      </li>
+      <li>
+        <strong>Uninstall:</strong> Removing the App deletes all locally stored data from your device.
+      </li>
+    </ul>
+  </section>
+
+  <!-- 8 -->
+  <section>
+    <h2>Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. When we do, we will revise the
+      "Last updated" date at the top of this page. Continued use of the App after any changes
+      constitutes your acceptance of the revised policy.
+    </p>
+    <p>
+      For significant changes we will make reasonable efforts to notify users via an in-app notice.
+    </p>
+  </section>
+
+  <!-- 9 -->
+  <section>
+    <h2>Contact Us</h2>
+    <p>
+      If you have any questions, concerns, or requests regarding this Privacy Policy,
+      please reach out:
+    </p>
+    <div class="contact-card">
+      <span class="label">Developer</span>
+      <strong>Zigyasalabs</strong>
+      <span class="label" style="margin-top:8px">Email</span>
+      <a href="mailto:zigyasalabs@gmail.com">zigyasalabs@gmail.com</a>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Zigyasalabs. All rights reserved.</span>
+    <span>English Novel &amp; Books Offline</span>
+  </footer>
+
+</div>
+</body>
+</html>
