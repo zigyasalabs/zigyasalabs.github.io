@@ -1,0 +1,465 @@
+<title>Privacy Policy — Hindi Kahaniyaan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:       #FDFAF6;
+    --text:     #1C1410;
+    --accent:   #E07B20;
+    --tint:     #F5EDD8;
+    --muted:    #8B7255;
+    --border:   #DDD0B8;
+    --rule:     #E07B20;
+    --serif:    Georgia, 'Times New Roman', serif;
+    --sans:     -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  html { font-size: 15px; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Header ── */
+  .header {
+    background: var(--accent);
+    padding: 40px 24px 36px;
+    text-align: center;
+  }
+  .header-hindi {
+    font-family: var(--serif);
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+  }
+  .header-english {
+    font-family: var(--serif);
+    font-size: 1rem;
+    color: rgba(255,255,255,0.82);
+    margin-top: 4px;
+    letter-spacing: 0.3px;
+  }
+  .header-pill {
+    display: inline-block;
+    margin-top: 18px;
+    background: rgba(255,255,255,0.18);
+    color: #fff;
+    font-size: 0.75rem;
+    font-family: var(--sans);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 4px 14px;
+    border-radius: 20px;
+  }
+
+  /* ── Page wrapper ── */
+  .page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 48px 24px 72px;
+  }
+
+  /* ── Meta bar ── */
+  .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+    font-size: 0.8rem;
+    color: var(--muted);
+    font-family: var(--sans);
+    letter-spacing: 0.03em;
+  }
+  .meta-app { font-weight: 600; color: var(--text); }
+
+  /* ── Intro blurb ── */
+  .intro {
+    background: var(--tint);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.9rem;
+    color: #3D2B1A;
+    margin-bottom: 40px;
+    line-height: 1.7;
+  }
+
+  /* ── Sections ── */
+  .section {
+    margin-bottom: 36px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .section-title {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 12px;
+    text-wrap: balance;
+  }
+  .section-number {
+    display: inline-block;
+    font-family: var(--sans);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+
+  p { margin-bottom: 12px; font-size: 0.95rem; color: #2A1E15; }
+  p:last-child { margin-bottom: 0; }
+
+  ul, ol {
+    padding-left: 20px;
+    margin-bottom: 12px;
+  }
+  li {
+    font-size: 0.95rem;
+    color: #2A1E15;
+    margin-bottom: 6px;
+    line-height: 1.65;
+  }
+
+  /* ── Data table ── */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    margin: 16px 0;
+    overflow-x: auto;
+    display: block;
+  }
+  .data-table thead tr {
+    background: var(--tint);
+  }
+  .data-table th {
+    text-align: left;
+    padding: 10px 14px;
+    font-weight: 700;
+    color: var(--text);
+    border-bottom: 2px solid var(--border);
+    font-family: var(--sans);
+    letter-spacing: 0.03em;
+  }
+  .data-table td {
+    padding: 10px 14px;
+    vertical-align: top;
+    border-bottom: 1px solid var(--border);
+    color: #2A1E15;
+    line-height: 1.6;
+  }
+  .data-table tr:last-child td { border-bottom: none; }
+  .data-table .tag {
+    display: inline-block;
+    background: #EAF4EC;
+    color: #2A6B34;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 10px;
+  }
+  .data-table .tag-none {
+    background: #F0F0F0;
+    color: #666;
+  }
+
+  /* ── Third-party list ── */
+  .third-party-item {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .third-party-item:last-child { border-bottom: none; }
+  .third-party-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin-top: 7px;
+    flex-shrink: 0;
+  }
+  .third-party-name {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--text);
+  }
+  .third-party-desc {
+    font-size: 0.88rem;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  /* ── Contact box ── */
+  .contact-box {
+    background: var(--tint);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 16px;
+  }
+  .contact-label {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+  .contact-value {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  /* ── Footer ── */
+  .footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-size: 0.78rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  strong { font-weight: 700; color: var(--text); }
+
+  @media (max-width: 480px) {
+    .header-hindi { font-size: 1.6rem; }
+    .page { padding: 32px 18px 56px; }
+    .contact-box { flex-direction: column; }
+  }
+</style>
+
+<!-- Header -->
+<div class="header">
+  <div class="header-hindi">हिंदी कहानियाँ</div>
+  <div class="header-english">Hindi Kahaniyaan</div>
+  <span class="header-pill">Privacy Policy</span>
+</div>
+
+<!-- Page body -->
+<div class="page">
+
+  <!-- Meta -->
+  <div class="meta">
+    <span><span class="meta-app">Hindi Kahaniyaan</span> · com.zigyasalabs.hindikahaniyaan</span>
+    <span>Last updated: June 29, 2025</span>
+  </div>
+
+  <!-- Intro -->
+  <div class="intro">
+    Hindi Kahaniyaan is a free, offline Hindi stories app. We are committed to your privacy.
+    This policy explains clearly what information is collected, why, and how it is handled.
+    <strong>We do not collect, sell, or share any personal information with third parties</strong>
+    beyond what is described below.
+  </div>
+
+  <!-- 1. Information We Collect -->
+  <div class="section">
+    <div class="section-number">01</div>
+    <div class="section-title">Information We Collect</div>
+    <p>
+      The app stores the following data <strong>locally on your device only</strong>.
+      None of this information is transmitted to our servers.
+    </p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Purpose</th>
+          <th>Stored</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Saved (favourite) stories</td>
+          <td>So you can revisit bookmarked stories</td>
+          <td><span class="tag">Device only</span></td>
+        </tr>
+        <tr>
+          <td>Last read story IDs</td>
+          <td>To show "Continue Reading" on the home screen</td>
+          <td><span class="tag">Device only</span></td>
+        </tr>
+        <tr>
+          <td>Font size preference</td>
+          <td>To remember your reading comfort setting</td>
+          <td><span class="tag">Device only</span></td>
+        </tr>
+        <tr>
+          <td>Theme preference (light/dark/system)</td>
+          <td>To remember your display setting</td>
+          <td><span class="tag">Device only</span></td>
+        </tr>
+        <tr>
+          <td>Personal identity or account data</td>
+          <td>—</td>
+          <td><span class="tag tag-none">Not collected</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      All story content (1,100+ stories) is bundled within the app itself.
+      No internet connection is required to read stories.
+    </p>
+  </div>
+
+  <!-- 2. Third-Party Services -->
+  <div class="section">
+    <div class="section-number">02</div>
+    <div class="section-title">Third-Party Services</div>
+    <p>
+      The app uses the following third-party services which may collect limited,
+      non-personal information as described:
+    </p>
+
+    <div class="third-party-item">
+      <div class="third-party-dot"></div>
+      <div>
+        <div class="third-party-name">Google AdMob</div>
+        <div class="third-party-desc">
+          Used to display banner advertisements within the app.
+          AdMob may collect device identifiers and usage data for ad personalisation
+          in accordance with Google's Privacy Policy. Ads can be disabled by us via
+          remote configuration at any time.
+          <br><br>
+          Google Privacy Policy: <strong>policies.google.com/privacy</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="third-party-item">
+      <div class="third-party-dot"></div>
+      <div>
+        <div class="third-party-name">Firebase Remote Config</div>
+        <div class="third-party-desc">
+          Used to remotely toggle features (such as enabling or disabling ads)
+          without requiring an app update. No personal data is sent through this service.
+          Firebase may collect basic device and app metadata.
+          <br><br>
+          Firebase Privacy Policy: <strong>firebase.google.com/support/privacy</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Permissions -->
+  <div class="section">
+    <div class="section-number">03</div>
+    <div class="section-title">App Permissions</div>
+    <p>The app requests the following Android permissions:</p>
+    <ul>
+      <li><strong>INTERNET</strong> — Required to load advertisements and fetch remote configuration.</li>
+    </ul>
+    <p>
+      No camera, microphone, location, contacts, or storage permissions are requested.
+    </p>
+  </div>
+
+  <!-- 4. Children -->
+  <div class="section">
+    <div class="section-number">04</div>
+    <div class="section-title">Children's Privacy</div>
+    <p>
+      Hindi Kahaniyaan is a general-audience app suitable for all ages.
+      We do not knowingly collect any personal information from children under 13.
+      The app does not include registration, chat, or social features of any kind.
+    </p>
+  </div>
+
+  <!-- 5. Data Security -->
+  <div class="section">
+    <div class="section-number">05</div>
+    <div class="section-title">Data Security</div>
+    <p>
+      All user preferences are stored using Android's standard
+      <strong>SharedPreferences</strong> mechanism and are accessible only by this app on
+      your device. We do not transmit this data anywhere. Since we do not collect
+      personal data on our servers, there is no risk of a server-side data breach
+      affecting you.
+    </p>
+  </div>
+
+  <!-- 6. Sharing -->
+  <div class="section">
+    <div class="section-number">06</div>
+    <div class="section-title">Story Sharing</div>
+    <p>
+      When you use the Share button on a story, the app passes the story title,
+      a short excerpt, and a link to the Play Store listing to your device's
+      native share sheet. This action is entirely under your control — no data
+      is sent to our servers, and we have no visibility into where you share.
+    </p>
+  </div>
+
+  <!-- 7. Changes -->
+  <div class="section">
+    <div class="section-number">07</div>
+    <div class="section-title">Changes to This Policy</div>
+    <p>
+      We may update this Privacy Policy from time to time. Any changes will be
+      posted on this page with a revised "Last updated" date. Continued use of
+      the app after changes are posted constitutes acceptance of the revised policy.
+    </p>
+  </div>
+
+  <!-- 8. Contact -->
+  <div class="section">
+    <div class="section-number">08</div>
+    <div class="section-title">Contact Us</div>
+    <p>
+      If you have any questions or concerns about this Privacy Policy, please contact us:
+    </p>
+    <div class="contact-box">
+      <div>
+        <div class="contact-label">Developer</div>
+        <div class="contact-value">Zigyasa Labs</div>
+      </div>
+      <div>
+        <div class="contact-label">Email</div>
+        <div class="contact-value">zigyasalabs@gmail.com</div>
+      </div>
+      <div>
+        <div class="contact-label">App</div>
+        <div class="contact-value">com.zigyasalabs.hindikahaniyaan</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    This privacy policy applies to the Android application <strong>Hindi Kahaniyaan</strong>
+    (package: com.zigyasalabs.hindikahaniyaan) published on Google Play.<br>
+    © 2025 Zigyasa Labs. All rights reserved.
+  </div>
+
+</div>
